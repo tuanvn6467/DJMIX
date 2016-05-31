@@ -670,7 +670,7 @@ namespace MusicIdentification
             {
                 bool complete = false;
                 //Start FingerprintBegin for loop
-                gnMusicID.FingerprintBegin(GnFingerprintType.kFingerprintTypeGNFPX, (uint)b.WaveFormat.SampleRate, (uint)b.WaveFormat.BitsPerSample, (uint)b.WaveFormat.Channels);
+                gnMusicID.FingerprintBegin(GnFingerprintType.kFingerprintTypeFile, (uint)b.WaveFormat.SampleRate, (uint)b.WaveFormat.BitsPerSample, (uint)b.WaveFormat.Channels);
                 while (currentBytes < maxLength)
                 {
                     complete = gnMusicID.FingerprintWrite(audioData, (uint)bytesRead);
