@@ -1,0 +1,68 @@
+C:\Users\BienVT\Desktop\gracenote-demo\MusicIdentification\bin\Debug\MusicIdentification.exe.config
+C:\Users\BienVT\Desktop\gracenote-demo\MusicIdentification\obj\Debug\MusicIdentification.csprojResolveAssemblyReference.cache
+C:\Users\BienVT\Desktop\gracenote-demo\MusicIdentification\obj\Debug\MusicIdentification.f_Main.resources
+C:\Users\BienVT\Desktop\gracenote-demo\MusicIdentification\obj\Debug\MusicIdentification.Properties.Resources.resources
+C:\Users\BienVT\Desktop\gracenote-demo\MusicIdentification\obj\Debug\MusicIdentification.csproj.GenerateResource.Cache
+C:\Users\BienVT\Desktop\gracenote-demo\MusicIdentification\bin\Debug\MusicIdentification.exe
+C:\Users\BienVT\Desktop\gracenote-demo\MusicIdentification\bin\Debug\MusicIdentification.pdb
+C:\Users\BienVT\Desktop\gracenote-demo\MusicIdentification\bin\Debug\gnsdk_csharp.dll
+C:\Users\BienVT\Desktop\gracenote-demo\MusicIdentification\bin\Debug\Newtonsoft.Json.dll
+C:\Users\BienVT\Desktop\gracenote-demo\MusicIdentification\bin\Debug\Newtonsoft.Json.xml
+C:\Users\BienVT\Desktop\gracenote-demo\MusicIdentification\obj\Debug\MusicIdentification.exe
+C:\Users\BienVT\Desktop\gracenote-demo\MusicIdentification\obj\Debug\MusicIdentification.pdb
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification\bin\Debug\MusicIdentification.exe.config
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification\obj\Debug\MusicIdentification.exe
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification\obj\Debug\MusicIdentification.pdb
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification\bin\Debug\MusicIdentification.exe
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification\bin\Debug\MusicIdentification.pdb
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification\bin\Debug\gnsdk_csharp.dll
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification\bin\Debug\Newtonsoft.Json.dll
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification\bin\Debug\Newtonsoft.Json.xml
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification\obj\Debug\MusicIdentification.csprojResolveAssemblyReference.cache
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification\obj\Debug\MusicIdentification.f_Main.resources
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification\obj\Debug\MusicIdentification.Properties.Resources.resources
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification\obj\Debug\MusicIdentification.csproj.GenerateResource.Cache
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - Copy\bin\Debug\MusicIdentification.exe.config
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - Copy\obj\Debug\MusicIdentification.exe
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - Copy\obj\Debug\MusicIdentification.pdb
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - Copy\bin\Debug\MusicIdentification.exe
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - Copy\bin\Debug\MusicIdentification.pdb
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - Copy\bin\Debug\gnsdk_csharp.dll
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - Copy\bin\Debug\Newtonsoft.Json.dll
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - Copy\bin\Debug\Newtonsoft.Json.xml
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - Copy\obj\Debug\MusicIdentification.csprojResolveAssemblyReference.cache
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - Copy\obj\Debug\MusicIdentification.f_Main.resources
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - Copy\obj\Debug\MusicIdentification.Properties.Resources.resources
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - Copy\obj\Debug\MusicIdentification.csproj.GenerateResource.Cache
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - src\bin\Debug\MusicIdentification.exe.config
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - src\obj\Debug\MusicIdentification.exe
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - src\obj\Debug\MusicIdentification.pdb
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - src\bin\Debug\MusicIdentification.exe
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - src\bin\Debug\MusicIdentification.pdb
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - src\bin\Debug\gnsdk_csharp.dll
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - src\bin\Debug\Newtonsoft.Json.dll
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - src\bin\Debug\Newtonsoft.Json.xml
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - src\obj\Debug\MusicIdentification.csprojResolveAssemblyReference.cache
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - src\obj\Debug\MusicIdentification.f_Main.resources
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - src\obj\Debug\MusicIdentification.Properties.Resources.resources
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - src\obj\Debug\MusicIdentification.csproj.GenerateResource.Cache
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - src\bin\Debug\NAudio.pdb
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - src\bin\Debug\NAudio.xml
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - src\bin\Debug\nunit.framework.xml
+C:\Users\BienVT\Desktop\gracenote-demo - Copy\MusicIdentification - src\obj\Debug\MusicIdentification.f_tracklist_compare.resources
+D:\Project\DJMIX\MusicIdentification - src - update - 20160520\bin\Debug\MusicIdentification.exe.config
+D:\Project\DJMIX\MusicIdentification - src - update - 20160520\obj\Debug\MusicIdentification.exe
+D:\Project\DJMIX\MusicIdentification - src - update - 20160520\obj\Debug\MusicIdentification.pdb
+D:\Project\DJMIX\MusicIdentification - src - update - 20160520\bin\Debug\MusicIdentification.exe
+D:\Project\DJMIX\MusicIdentification - src - update - 20160520\bin\Debug\MusicIdentification.pdb
+D:\Project\DJMIX\MusicIdentification - src - update - 20160520\bin\Debug\gnsdk_csharp.dll
+D:\Project\DJMIX\MusicIdentification - src - update - 20160520\bin\Debug\Newtonsoft.Json.dll
+D:\Project\DJMIX\MusicIdentification - src - update - 20160520\bin\Debug\NAudio.pdb
+D:\Project\DJMIX\MusicIdentification - src - update - 20160520\bin\Debug\NAudio.xml
+D:\Project\DJMIX\MusicIdentification - src - update - 20160520\bin\Debug\Newtonsoft.Json.xml
+D:\Project\DJMIX\MusicIdentification - src - update - 20160520\bin\Debug\nunit.framework.xml
+D:\Project\DJMIX\MusicIdentification - src - update - 20160520\obj\Debug\MusicIdentification.csprojResolveAssemblyReference.cache
+D:\Project\DJMIX\MusicIdentification - src - update - 20160520\obj\Debug\MusicIdentification.f_Main.resources
+D:\Project\DJMIX\MusicIdentification - src - update - 20160520\obj\Debug\MusicIdentification.f_tracklist_compare.resources
+D:\Project\DJMIX\MusicIdentification - src - update - 20160520\obj\Debug\MusicIdentification.Properties.Resources.resources
+D:\Project\DJMIX\MusicIdentification - src - update - 20160520\obj\Debug\MusicIdentification.csproj.GenerateResource.Cache

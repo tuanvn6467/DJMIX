@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F33D4D3E-3486-45DB-B01C-74A8DE0C6998}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MusicIdentification</RootNamespace>
+    <AssemblyName>MusicIdentification</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="gnsdk_csharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\lib\gnsdk_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio, Version=1.7.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>FileSystem\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.mocks, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\nunit.mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="pnunit.framework, Version=1.0.4109.34242, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\pnunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="f_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_Main.Designer.cs">
+      <DependentUpon>f_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_tracklist_compare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_tracklist_compare.Designer.cs">
+      <DependentUpon>f_tracklist_compare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\attribute_provider.cs" />
+    <Compile Include="Models\collection_ident_provider.cs" />
+    <Compile Include="Models\collection_join_provider.cs" />
+    <Compile Include="Models\collection_storage_provider.cs" />
+    <Compile Include="Models\GnAlbum.cs" />
+    <Compile Include="Models\GnAlbumEdit.cs" />
+    <Compile Include="Models\GnAlbumEnumerable.cs" />
+    <Compile Include="Models\GnAlbumEnumerator.cs" />
+    <Compile Include="Models\GnAlbumProvider.cs" />
+    <Compile Include="Models\GnArtist.cs" />
+    <Compile Include="Models\GnArtistEdit.cs" />
+    <Compile Include="Models\GnAsset.cs" />
+    <Compile Include="Models\GnAssetEnumerable.cs" />
+    <Compile Include="Models\GnAssetEnumerator.cs" />
+    <Compile Include="Models\GnAssetProvider.cs" />
+    <Compile Include="Models\GnAudioWork.cs" />
+    <Compile Include="Models\GnAudioWorkEdit.cs" />
+    <Compile Include="Models\GnContent.cs" />
+    <Compile Include="Models\GnContentEnumerable.cs" />
+    <Compile Include="Models\GnContentEnumerator.cs" />
+    <Compile Include="Models\GnContentProvider.cs" />
+    <Compile Include="Models\GnContentType.cs" />
+    <Compile Include="Models\GnContributor.cs" />
+    <Compile Include="Models\GnContributorEdit.cs" />
+    <Compile Include="Models\GnContributorEnumerable.cs" />
+    <Compile Include="Models\GnContributorEnumerator.cs" />
+    <Compile Include="Models\GnContributorProvider.cs" />
+    <Compile Include="Models\GnCredit.cs" />
+    <Compile Include="Models\GnCreditEdit.cs" />
+    <Compile Include="Models\GnCreditEnumerable.cs" />
+    <Compile Include="Models\GnCreditEnumerator.cs" />
+    <Compile Include="Models\GnCreditProvider.cs" />
+    <Compile Include="Models\GnDataLevel.cs" />
+    <Compile Include="Models\GnDataMatch.cs" />
+    <Compile Include="Models\GnDataMatchEnumerable.cs" />
+    <Compile Include="Models\GnDataMatchEnumerator.cs" />
+    <Compile Include="Models\GnDataMatchProvider.cs" />
+    <Compile Include="Models\GnDataObject.cs" />
+    <Compile Include="Models\GnDescriptor.cs" />
+    <Compile Include="Models\GnDsp.cs" />
+    <Compile Include="Models\GnDspFeature.cs" />
+    <Compile Include="Models\GnDspFeatureQuality.cs" />
+    <Compile Include="Models\GnDspFeatureType.cs" />
+    <Compile Include="Models\GnError.cs" />
+    <Compile Include="Models\GnException.cs" />
+    <Compile Include="Models\GnExternalId.cs" />
+    <Compile Include="Models\GnExternalIdEnumerable.cs" />
+    <Compile Include="Models\GnExternalIdEnumerator.cs" />
+    <Compile Include="Models\GnExternalIdProvider.cs" />
+    <Compile Include="Models\GnFingerprintType.cs" />
+    <Compile Include="Models\GnImagePreference.cs" />
+    <Compile Include="Models\GnImageSize.cs" />
+    <Compile Include="Models\GnLanguage.cs" />
+    <Compile Include="Models\GnLicenseInputMode.cs" />
+    <Compile Include="Models\GnLink.cs" />
+    <Compile Include="Models\GnLinkContent.cs" />
+    <Compile Include="Models\GnLinkContentType.cs" />
+    <Compile Include="Models\GnLinkDataType.cs" />
+    <Compile Include="Models\GnLinkOptions.cs" />
+    <Compile Include="Models\GnList.cs" />
+    <Compile Include="Models\GnListElement.cs" />
+    <Compile Include="Models\GnListElementChildEnumerable.cs" />
+    <Compile Include="Models\GnListElementChildEnumerator.cs" />
+    <Compile Include="Models\GnListElementEnumerable.cs" />
+    <Compile Include="Models\GnListElementEnumerator.cs" />
+    <Compile Include="Models\GnListRenderFlags.cs" />
+    <Compile Include="Models\GnListType.cs" />
+    <Compile Include="Models\GnLocale.cs" />
+    <Compile Include="Models\GnLocaleGroup.cs" />
+    <Compile Include="Models\GnLocaleInfo.cs" />
+    <Compile Include="Models\GnLocaleInfoEnumerable.cs" />
+    <Compile Include="Models\GnLocaleInfoEnumerator.cs" />
+    <Compile Include="Models\GnLocalStorageInfo.cs" />
+    <Compile Include="Models\GnLocalStorageName.cs" />
+    <Compile Include="Models\GnLocalStreamEngineType.cs" />
+    <Compile Include="Models\GnLog.cs" />
+    <Compile Include="Models\GnLogColumns.cs" />
+    <Compile Include="Models\GnLogEventsDelegate.cs" />
+    <Compile Include="Models\GnLogFilters.cs" />
+    <Compile Include="Models\GnLogMessageType.cs" />
+    <Compile Include="Models\GnLogOptions.cs" />
+    <Compile Include="Models\GnLogPackageType.cs" />
+    <Compile Include="Models\GnLookupData.cs" />
+    <Compile Include="Models\GnLookupLocal.cs" />
+    <Compile Include="Models\GnLookupLocalStream.cs" />
+    <Compile Include="Models\GnLookupLocalStreamIngest.cs" />
+    <Compile Include="Models\GnLookupLocalStreamIngestEventsDelegate.cs" />
+    <Compile Include="Models\GnLookupLocalStreamIngestStatus.cs" />
+    <Compile Include="Models\GnLookupMode.cs" />
+    <Compile Include="Models\GnManager.cs" />
+    <Compile Include="Models\GnMarshalUTF8.cs" />
+    <Compile Include="Models\GnMatch.cs" />
+    <Compile Include="Models\GnMatchEnumerable.cs" />
+    <Compile Include="Models\GnMatchEnumerator.cs" />
+    <Compile Include="Models\GnMatchProvider.cs" />
+    <Compile Include="Models\GnMoodgrid.cs" />
+    <Compile Include="Models\GnMoodgridCoordinateType.cs" />
+    <Compile Include="Models\GnMoodgridDataPoint.cs" />
+    <Compile Include="Models\GnMoodgridFilterConditionType.cs" />
+    <Compile Include="Models\GnMoodgridFilterListType.cs" />
+    <Compile Include="Models\GnMoodgridIdentifier.cs" />
+    <Compile Include="Models\GnMoodgridPresentation.cs" />
+    <Compile Include="Models\GnMoodgridPresentationDataEnumerable.cs" />
+    <Compile Include="Models\GnMoodgridPresentationDataEnumerator.cs" />
+    <Compile Include="Models\GnMoodgridPresentationType.cs" />
+    <Compile Include="Models\GnMoodgridProvider.cs" />
+    <Compile Include="Models\GnMoodgridProviderEnumerable.cs" />
+    <Compile Include="Models\GnMoodgridProviderEnumerator.cs" />
+    <Compile Include="Models\GnMoodgridResult.cs" />
+    <Compile Include="Models\GnMoodgridResultEnumerable.cs" />
+    <Compile Include="Models\GnMoodgridResultEnumerator.cs" />
+    <Compile Include="Models\GnMusicId.cs" />
+    <Compile Include="Models\GnMusicIdFile.cs" />
+    <Compile Include="Models\GnMusicIdFileCallbackStatus.cs" />
+    <Compile Include="Models\GnMusicIdFileEventsDelegate.cs" />
+    <Compile Include="Models\GnMusicIdFileInfo.cs" />
+    <Compile Include="Models\GnMusicIdFileInfoEnumerable.cs" />
+    <Compile Include="Models\GnMusicIdFileInfoEnumerator.cs" />
+    <Compile Include="Models\GnMusicIdFileInfoEventsDelegate.cs" />
+    <Compile Include="Models\GnMusicIdFileInfoManager.cs" />
+    <Compile Include="Models\GnMusicIdFileInfoStatus.cs" />
+    <Compile Include="Models\GnMusicIdFileOptions.cs" />
+    <Compile Include="Models\GnMusicIdFileProcessType.cs" />
+    <Compile Include="Models\GnMusicIdFileResponseType.cs" />
+    <Compile Include="Models\GnMusicIdMatch.cs" />
+    <Compile Include="Models\GnMusicIdOptions.cs" />
+    <Compile Include="Models\GnMusicIdStream.cs" />
+    <Compile Include="Models\GnMusicIdStreamApplicationEventType.cs" />
+    <Compile Include="Models\GnMusicIdStreamEvent.cs" />
+    <Compile Include="Models\GnMusicIdStreamEventsDelegate.cs" />
+    <Compile Include="Models\GnMusicIdStreamIdentifyingStatus.cs" />
+    <Compile Include="Models\GnMusicIdStreamOptions.cs" />
+    <Compile Include="Models\GnMusicIdStreamPreset.cs" />
+    <Compile Include="Models\GnMusicIdStreamProcessingStatus.cs" />
+    <Compile Include="Models\GnName.cs" />
+    <Compile Include="Models\GnNameEdit.cs" />
+    <Compile Include="Models\GnNameEnumerable.cs" />
+    <Compile Include="Models\GnNameEnumerator.cs" />
+    <Compile Include="Models\GnNameProvider.cs" />
+    <Compile Include="Models\GnObject.cs" />
+    <Compile Include="Models\GnPlaylist.cs" />
+    <Compile Include="Models\GnPlaylistAttributeEnumerable.cs" />
+    <Compile Include="Models\GnPlaylistAttributeEnumerator.cs" />
+    <Compile Include="Models\GnPlaylistAttributes.cs" />
+    <Compile Include="Models\GnPlaylistCollection.cs" />
+    <Compile Include="Models\GnPlaylistCollectionIdentEnumerable.cs" />
+    <Compile Include="Models\GnPlaylistCollectionIdentEnumerator.cs" />
+    <Compile Include="Models\GnPlaylistCollectionSyncEventsDelegate.cs" />
+    <Compile Include="Models\GnPlaylistEventsIdentiferStatus.cs" />
+    <Compile Include="Models\GnPlaylistIdentifier.cs" />
+    <Compile Include="Models\GnPlaylistJoinEnumerable.cs" />
+    <Compile Include="Models\GnPlaylistJoinEnumerator.cs" />
+    <Compile Include="Models\GnPlaylistMoreLikeThisOptions.cs" />
+    <Compile Include="Models\GnPlaylistResult.cs" />
+    <Compile Include="Models\GnPlaylistResultIdentEnumerable.cs" />
+    <Compile Include="Models\GnPlaylistResultIdentEnumerator.cs" />
+    <Compile Include="Models\GnPlaylistStorage.cs" />
+    <Compile Include="Models\GnPlaylistStorageEnumerable.cs" />
+    <Compile Include="Models\GnPlaylistStorageEnumerator.cs" />
+    <Compile Include="Models\GnRating.cs" />
+    <Compile Include="Models\GnRegion.cs" />
+    <Compile Include="Models\GnRenderOptions.cs" />
+    <Compile Include="Models\GnResponseAlbums.cs" />
+    <Compile Include="Models\GnResponseContributors.cs" />
+    <Compile Include="Models\GnResponseDataMatches.cs" />
+    <Compile Include="Models\GnResponseMatches.cs" />
+    <Compile Include="Models\GnResponseTracks.cs" />
+    <Compile Include="Models\GnResponseVideoObjects.cs" />
+    <Compile Include="Models\GnResponseVideoProduct.cs" />
+    <Compile Include="Models\GnResponseVideoSeasons.cs" />
+    <Compile Include="Models\GnResponseVideoSeries.cs" />
+    <Compile Include="Models\GnResponseVideoSuggestions.cs" />
+    <Compile Include="Models\GnResponseVideoWork.cs" />
+    <Compile Include="Models\GnRhythm.cs" />
+    <Compile Include="Models\GnRhythmEvent.cs" />
+    <Compile Include="Models\GnRhythmQuery.cs" />
+    <Compile Include="Models\GnRhythmQueryOptions.cs" />
+    <Compile Include="Models\GnRhythmStation.cs" />
+    <Compile Include="Models\GnRhythmStationOptions.cs" />
+    <Compile Include="Models\GnRole.cs" />
+    <Compile Include="Models\gnsdk_csharp_marshal.cs" />
+    <Compile Include="Models\gnsdk_csharp_marshalPINVOKE.cs" />
+    <Compile Include="Models\GnStatus.cs" />
+    <Compile Include="Models\GnStatusEventsDelegate.cs" />
+    <Compile Include="Models\GnStorageSqlite.cs" />
+    <Compile Include="Models\GnStoreOps.cs" />
+    <Compile Include="Models\GnString.cs" />
+    <Compile Include="Models\GnStringValueEnumerable.cs" />
+    <Compile Include="Models\GnStringValueEnumerator.cs" />
+    <Compile Include="Models\GnSubmit.cs" />
+    <Compile Include="Models\GnSubmitAudioFormat.cs" />
+    <Compile Include="Models\GnSubmitFeatureSourceBitRate.cs" />
+    <Compile Include="Models\GnSubmitFeatureSourceBitRateType.cs" />
+    <Compile Include="Models\GnSubmitFeatureSourceDescription.cs" />
+    <Compile Include="Models\GnSubmitFeatureSourceId.cs" />
+    <Compile Include="Models\GnSubmitFeatureSourceName.cs" />
+    <Compile Include="Models\GnSubmitState.cs" />
+    <Compile Include="Models\GnSystemEventsDelegate.cs" />
+    <Compile Include="Models\GnThreadPriority.cs" />
+    <Compile Include="Models\GnTitle.cs" />
+    <Compile Include="Models\GnTitleEdit.cs" />
+    <Compile Include="Models\GnTrack.cs" />
+    <Compile Include="Models\GnTrackEdit.cs" />
+    <Compile Include="Models\GnTrackEditEnumerable.cs" />
+    <Compile Include="Models\GnTrackEditEnumerator.cs" />
+    <Compile Include="Models\GnTrackEditProvider.cs" />
+    <Compile Include="Models\GnTrackEnumerable.cs" />
+    <Compile Include="Models\GnTrackEnumerator.cs" />
+    <Compile Include="Models\GnTrackProvider.cs" />
+    <Compile Include="Models\GnUser.cs" />
+    <Compile Include="Models\GnUserOptions.cs" />
+    <Compile Include="Models\GnUserRegisterMode.cs" />
+    <Compile Include="Models\GnVideo.cs" />
+    <Compile Include="Models\GnVideoChapter.cs" />
+    <Compile Include="Models\GnVideoChapterEnumerable.cs" />
+    <Compile Include="Models\GnVideoChapterEnumerator.cs" />
+    <Compile Include="Models\GnVideoChapterProvider.cs" />
+    <Compile Include="Models\GnVideoCredit.cs" />
+    <Compile Include="Models\GnVideoCreditEnumerable.cs" />
+    <Compile Include="Models\GnVideoCreditEnumerator.cs" />
+    <Compile Include="Models\GnVideoCreditProvider.cs" />
+    <Compile Include="Models\GnVideoDisc.cs" />
+    <Compile Include="Models\GnVideoDiscEnumerable.cs" />
+    <Compile Include="Models\GnVideoDiscEnumerator.cs" />
+    <Compile Include="Models\GnVideoDiscProvider.cs" />
+    <Compile Include="Models\GnVideoExternalIdType.cs" />
+    <Compile Include="Models\GnVideoFeature.cs" />
+    <Compile Include="Models\GnVideoFeatureEnumerable.cs" />
+    <Compile Include="Models\GnVideoFeatureEnumerator.cs" />
+    <Compile Include="Models\GnVideoFeatureProvider.cs" />
+    <Compile Include="Models\GnVideoFilterType.cs" />
+    <Compile Include="Models\GnVideoLayer.cs" />
+    <Compile Include="Models\GnVideoLayerEnumerable.cs" />
+    <Compile Include="Models\GnVideoLayerEnumerator.cs" />
+    <Compile Include="Models\GnVideoLayerProvider.cs" />
+    <Compile Include="Models\GnVideoListElementFilterType.cs" />
+    <Compile Include="Models\GnVideoOptions.cs" />
+    <Compile Include="Models\GnVideoProduct.cs" />
+    <Compile Include="Models\GnVideoProductEnumerable.cs" />
+    <Compile Include="Models\GnVideoProductEnumerator.cs" />
+    <Compile Include="Models\GnVideoProductProvider.cs" />
+    <Compile Include="Models\GnVideoSearchField.cs" />
+    <Compile Include="Models\GnVideoSearchType.cs" />
+    <Compile Include="Models\GnVideoSeason.cs" />
+    <Compile Include="Models\GnVideoSeasonEnumerable.cs" />
+    <Compile Include="Models\GnVideoSeasonEnumerator.cs" />
+    <Compile Include="Models\GnVideoSeasonProvider.cs" />
+    <Compile Include="Models\GnVideoSeries.cs" />
+    <Compile Include="Models\GnVideoSeriesEnumerable.cs" />
+    <Compile Include="Models\GnVideoSeriesEnumerator.cs" />
+    <Compile Include="Models\GnVideoSeriesProvider.cs" />
+    <Compile Include="Models\GnVideoSide.cs" />
+    <Compile Include="Models\GnVideoSideEnumerable.cs" />
+    <Compile Include="Models\GnVideoSideEnumerator.cs" />
+    <Compile Include="Models\GnVideoSideProvider.cs" />
+    <Compile Include="Models\GnVideoTOCFlag.cs" />
+    <Compile Include="Models\GnVideoWork.cs" />
+    <Compile Include="Models\GnVideoWorkEnumerable.cs" />
+    <Compile Include="Models\GnVideoWorkEnumerator.cs" />
+    <Compile Include="Models\GnVideoWorkProvider.cs" />
+    <Compile Include="Models\gn_gdo_string_provider.cs" />
+    <Compile Include="Models\IGnAudioSource.cs" />
+    <Compile Include="Models\IGnCancellable.cs" />
+    <Compile Include="Models\IGnUserStore.cs" />
+    <Compile Include="Models\list_element_child_provider.cs" />
+    <Compile Include="Models\list_element_provider.cs" />
+    <Compile Include="Models\locale_info_provider.cs" />
+    <Compile Include="Models\moodgrid_provider.cs" />
+    <Compile Include="Models\moodgrid_result_provider.cs" />
+    <Compile Include="Models\musicid_file_info_provider.cs" />
+    <Compile Include="Models\presentation_data_provider.cs" />
+    <Compile Include="Models\result_provider.cs" />
+    <Compile Include="Models\SWIGTYPE_p_unsigned_char.cs" />
+    <Compile Include="MusicIDMatch.cs" />
+    <Compile Include="MusicIDFileTrackID.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\Utils.cs" />
+    <EmbeddedResource Include="f_Main.resx">
+      <DependentUpon>f_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_tracklist_compare.resx">
+      <DependentUpon>f_tracklist_compare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FileSystem\gnsdk_csharp.dll" />
+    <Content Include="FileSystem\gnsdk_csharp_marshal.dll" />
+    <Content Include="FileSystem\Newtonsoft.Json.dll" />
+    <Content Include="FileSystem\Newtonsoft.Json.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

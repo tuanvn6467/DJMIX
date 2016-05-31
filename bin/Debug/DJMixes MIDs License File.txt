@@ -1,0 +1,10 @@
+-- BEGIN LICENSE v1.0 960D6C09 --
+licensee: Gracenote, Inc.
+name: DJMixes MIDs License File
+
+client_id: 1108215790
+musicid_stream: enabled
+
+-- SIGNATURE 960D6C09 --
+lAADAgAe+n6XGwoA4giI2O4raoWS6G3dhsRuef3BXyaRzTulAB8BA4CXQFlqkf90UHDCVWFxzh6pKJVGVToM6tNFLMJJ
+-- END LICENSE 960D6C09 --
