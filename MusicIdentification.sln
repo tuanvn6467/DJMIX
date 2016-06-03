@@ -5,8 +5,6 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicIdentification", "MusicIdentification.csproj", "{F33D4D3E-3486-45DB-B01C-74A8DE0C6998}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "..\ConsoleApplication1\ConsoleApplication1.csproj", "{CF9424F6-1598-455F-9F3F-3CB71AB99108}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{F33D4D3E-3486-45DB-B01C-74A8DE0C6998}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F33D4D3E-3486-45DB-B01C-74A8DE0C6998}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F33D4D3E-3486-45DB-B01C-74A8DE0C6998}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CF9424F6-1598-455F-9F3F-3CB71AB99108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CF9424F6-1598-455F-9F3F-3CB71AB99108}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CF9424F6-1598-455F-9F3F-3CB71AB99108}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CF9424F6-1598-455F-9F3F-3CB71AB99108}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

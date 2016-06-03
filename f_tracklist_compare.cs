@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MusicIdentification.Utilities;
 
 namespace MusicIdentification
 {
@@ -16,18 +17,23 @@ namespace MusicIdentification
         List<string> listTrackMatchedArtist = new List<string>();
         List<string> listTrackMatchedCompare = new List<string>();
         List<string> listTrackMatchedAristCompare = new List<string>();
+        List<string> listTrackByMediaScanner = new List<string>(); 
         public f_tracklist_compare()
         {
             InitializeComponent();
         }
-        public f_tracklist_compare(List<string> listTrackMatched, List<string> listTrackMatchedArtist, List<string> listTrackMatchedCompare, List<string> listTrackMatchedAristCompare)
+
+        public f_tracklist_compare(List<string> listTrackMatched, List<string> listTrackMatchedArtist,
+            List<string> listTrackMatchedCompare, List<string> listTrackMatchedAristCompare, List<string> listTrackByMediaScanner)
         {
             InitializeComponent();
             this.listTrackMatched = listTrackMatched;
             this.listTrackMatchedArtist = listTrackMatchedArtist;
             this.listTrackMatchedCompare = listTrackMatchedCompare;
             this.listTrackMatchedAristCompare = listTrackMatchedAristCompare;
+            this.listTrackByMediaScanner = listTrackByMediaScanner;
         }
+
         private void f_tracklist_compare_Load(object sender, EventArgs e)
         {
             try
@@ -35,6 +41,7 @@ namespace MusicIdentification
                 bindListTrack();
                 bindListTrackCompare();
                 bindListTrackResult();
+                bindListTrackMediaScanner();
             }
             catch (Exception ex)
             {
@@ -86,24 +93,52 @@ namespace MusicIdentification
             dt.Columns.Add("stt");
             dt.Columns.Add("name");
             var sid = 1;
+            var lstItem = new Dictionary<int,string>();
             foreach (var item in listTrackMatched)
             {
                 foreach (var item2 in listTrackMatchedCompare)
                 {
-                    if (item.ToLower().Contains(item2.ToLower()))
+                    if (item.ToLower().Contains(item2.ToLower()) &&
+                        !lstItem.Any(
+                            t =>
+                                t.Value.ToLower()
+                                    .ReplaceSpecialCharacter()
+                                    .Contains(item.ToLower().Trim().ReplaceSpecialCharacter()))
+                        )
                     {
-                        DataRow row = dt.NewRow();
-                        row["stt"] = sid;
+                        lstItem.Add(sid, item);
                         sid++;
-                        row["name"] = item;
-                        dt.Rows.Add(row);
                     }
                 }
-
+            }
+            foreach (var item in lstItem)
+            {
+                DataRow row = dt.NewRow();
+                row["stt"] = item.Key;
+                row["name"] = item.Value;
+                dt.Rows.Add(row);
             }
             dataGridView_ListResult.DataSource = dt;
             dataGridView_ListResult.Columns[0].Width = 108;
             dataGridView_ListResult.Columns[1].Width = 500;
+        }
+        private void bindListTrackMediaScanner()
+        {
+            DataTable dt = new DataTable();
+            dt.Columns.Add("stt");
+            dt.Columns.Add("name");
+            var sid = 1;
+            foreach (var item in listTrackByMediaScanner)
+            {
+                DataRow row = dt.NewRow();
+                row["stt"] = sid;
+                sid++;
+                row["name"] = item;
+                dt.Rows.Add(row);
+            }
+            dtListMediaScanner.DataSource = dt;
+            dtListMediaScanner.Columns[0].Width = 108;
+            dtListMediaScanner.Columns[1].Width = 500;
         }
     }
 }

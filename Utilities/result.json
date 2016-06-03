@@ -1,0 +1,1596 @@
+﻿{
+  "filename": "test.mp3",
+  "fp_created": "195",
+  "fp_duration": "579570",
+  "tracks_matched": "29",
+  "matches": [
+    {
+      "title": "No Title (no match)",
+      "artist": "No Artist (no match)",
+      "gnid": "",
+      "song_duration": "0",
+      "match_positions": [
+        {
+          "match_start": "0",
+          "match_end": "0",
+          "match_duration": "0",
+          "query_start": "273020",
+          "query_end": "281936",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "0",
+          "match_end": "0",
+          "match_duration": "0",
+          "query_start": "1443004",
+          "query_end": "1451920",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "0",
+          "match_end": "0",
+          "match_duration": "0",
+          "query_start": "1482013",
+          "query_end": "1490930",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "0",
+          "match_end": "0",
+          "match_duration": "0",
+          "query_start": "1521023",
+          "query_end": "1529939",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "0",
+          "match_end": "0",
+          "match_duration": "0",
+          "query_start": "1560009",
+          "query_end": "1568925",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "0",
+          "match_end": "0",
+          "match_duration": "0",
+          "query_start": "1599018",
+          "query_end": "1607935",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "0",
+          "match_end": "0",
+          "match_duration": "0",
+          "query_start": "2340014",
+          "query_end": "2348930",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "0",
+          "match_end": "0",
+          "match_duration": "0",
+          "query_start": "2418009",
+          "query_end": "2426926",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "0",
+          "match_end": "0",
+          "match_duration": "0",
+          "query_start": "2457019",
+          "query_end": "2465935",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "0",
+          "match_end": "0",
+          "match_duration": "0",
+          "query_start": "2496005",
+          "query_end": "2504922",
+          "query_duration": "8917"
+        }
+      ],
+      "match_coverage": "0",
+      "match_percentage": "0%"
+    },
+    {
+      "title": "Oh Yea (Original Mix)",
+      "artist": "Andrew Anagnos",
+      "gnid": "295175733-DD33E79A069CF0DC4C2D8DBAF6F48420",
+      "song_duration": "422092",
+      "match_positions": [
+        {
+          "match_start": "404630",
+          "match_end": "410574",
+          "match_duration": "5944",
+          "query_start": "2379000",
+          "query_end": "2387916",
+          "query_duration": "8916"
+        }
+      ],
+      "match_coverage": "5944",
+      "match_percentage": "1.02559%"
+    },
+    {
+      "title": "Typhoon",
+      "artist": "Julian Calor",
+      "gnid": "407346059-EC3BEC4771C7043380A6C3E7F74398BF",
+      "song_duration": "337153",
+      "match_positions": [
+        {
+          "match_start": "54427",
+          "match_end": "63343",
+          "match_duration": "8916",
+          "query_start": "1638005",
+          "query_end": "1646921",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "93576",
+          "match_end": "102492",
+          "match_duration": "8916",
+          "query_start": "1677014",
+          "query_end": "1685931",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "132725",
+          "match_end": "141641",
+          "match_duration": "8916",
+          "query_start": "1716001",
+          "query_end": "1724917",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "171920",
+          "match_end": "180836",
+          "match_duration": "8916",
+          "query_start": "1755010",
+          "query_end": "1763927",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "211069",
+          "match_end": "219985",
+          "match_duration": "8916",
+          "query_start": "1794020",
+          "query_end": "1802936",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "250218",
+          "match_end": "259134",
+          "match_duration": "8916",
+          "query_start": "1833006",
+          "query_end": "1841922",
+          "query_duration": "8916"
+        }
+      ],
+      "match_coverage": "53496",
+      "match_percentage": "9.23029%"
+    },
+    {
+      "title": "Typhoon (Original Mix)",
+      "artist": "Julian Calor",
+      "gnid": "415758306-CDAE2F9B8CE50A6EBDF163515DCD9AF9",
+      "song_duration": "232106",
+      "match_positions": [
+        {
+          "match_start": "0",
+          "match_end": "2972",
+          "match_duration": "2972",
+          "query_start": "1638005",
+          "query_end": "1646921",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "33529",
+          "match_end": "42445",
+          "match_duration": "8916",
+          "query_start": "1677014",
+          "query_end": "1685931",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "72678",
+          "match_end": "81594",
+          "match_duration": "8916",
+          "query_start": "1716001",
+          "query_end": "1724917",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "111827",
+          "match_end": "120743",
+          "match_duration": "8916",
+          "query_start": "1755010",
+          "query_end": "1763927",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "151022",
+          "match_end": "159938",
+          "match_duration": "8916",
+          "query_start": "1794020",
+          "query_end": "1802936",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "190124",
+          "match_end": "199040",
+          "match_duration": "8916",
+          "query_start": "1833006",
+          "query_end": "1841922",
+          "query_duration": "8916"
+        }
+      ],
+      "match_coverage": "47552",
+      "match_percentage": "8.2047%"
+    },
+    {
+      "title": "Kismet(Original Mix)",
+      "artist": "Ftampa",
+      "gnid": "420488049-7F1524E0DC860494FC28B1C8CA0BEAEC",
+      "song_duration": "337246",
+      "match_positions": [
+        {
+          "match_start": "84520",
+          "match_end": "93436",
+          "match_duration": "8916",
+          "query_start": "312006",
+          "query_end": "320922",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "123715",
+          "match_end": "132631",
+          "match_duration": "8916",
+          "query_start": "351016",
+          "query_end": "359932",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "162818",
+          "match_end": "171734",
+          "match_duration": "8916",
+          "query_start": "390002",
+          "query_end": "398918",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "202013",
+          "match_end": "210929",
+          "match_duration": "8916",
+          "query_start": "429011",
+          "query_end": "437928",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "241162",
+          "match_end": "250078",
+          "match_duration": "8916",
+          "query_start": "468021",
+          "query_end": "476937",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "280311",
+          "match_end": "289227",
+          "match_duration": "8916",
+          "query_start": "507007",
+          "query_end": "515924",
+          "query_duration": "8917"
+        }
+      ],
+      "match_coverage": "53496",
+      "match_percentage": "9.23029%"
+    },
+    {
+      "title": "Typhoon (Original Mix)",
+      "artist": "Julian Calor",
+      "gnid": "422478055-E09D2CAF3EC7E9F8B6289FDFB3C31663",
+      "song_duration": "324104",
+      "match_positions": [
+        {
+          "match_start": "47972",
+          "match_end": "56888",
+          "match_duration": "8916",
+          "query_start": "1638005",
+          "query_end": "1646921",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "87121",
+          "match_end": "96037",
+          "match_duration": "8916",
+          "query_start": "1677014",
+          "query_end": "1685931",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "126270",
+          "match_end": "135186",
+          "match_duration": "8916",
+          "query_start": "1716001",
+          "query_end": "1724917",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "165418",
+          "match_end": "174334",
+          "match_duration": "8916",
+          "query_start": "1755010",
+          "query_end": "1763927",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "204567",
+          "match_end": "213483",
+          "match_duration": "8916",
+          "query_start": "1794020",
+          "query_end": "1802936",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "243716",
+          "match_end": "252632",
+          "match_duration": "8916",
+          "query_start": "1833006",
+          "query_end": "1841922",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "297122",
+          "match_end": "303066",
+          "match_duration": "5944",
+          "query_start": "1872015",
+          "query_end": "1880932",
+          "query_duration": "8917"
+        }
+      ],
+      "match_coverage": "59440",
+      "match_percentage": "10.2559%"
+    },
+    {
+      "title": "Zenith (Edit)",
+      "artist": "Dannic",
+      "gnid": "432413202-B29DA9F50BA0752B07F6FE6A6C1805DC",
+      "song_duration": "117678",
+      "match_positions": [
+        {
+          "match_start": "4458",
+          "match_end": "10402",
+          "match_duration": "5944",
+          "query_start": "546017",
+          "query_end": "554933",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "28560",
+          "match_end": "37476",
+          "match_duration": "8916",
+          "query_start": "585003",
+          "query_end": "593919",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "67755",
+          "match_end": "76671",
+          "match_duration": "8916",
+          "query_start": "624013",
+          "query_end": "632929",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "106904",
+          "match_end": "115820",
+          "match_duration": "8916",
+          "query_start": "663022",
+          "query_end": "671939",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "66827",
+          "match_end": "72771",
+          "match_duration": "5944",
+          "overlap": "67755 - 72771",
+          "query_start": "780004",
+          "query_end": "788921",
+          "query_duration": "8917"
+        }
+      ],
+      "match_coverage": "33620",
+      "match_percentage": "5.80085%"
+    },
+    {
+      "title": "Radical (Edit)",
+      "artist": "Dyro & Dannic",
+      "gnid": "432413211-8D3AE99D45C55D1A13A8022A3AFCB3A9",
+      "song_duration": "207818",
+      "match_positions": [
+        {
+          "match_start": "29117",
+          "match_end": "38033",
+          "match_duration": "8916",
+          "query_start": "819014",
+          "query_end": "827930",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "68266",
+          "match_end": "77182",
+          "match_duration": "8916",
+          "query_start": "858000",
+          "query_end": "866917",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "107415",
+          "match_end": "113359",
+          "match_duration": "5944",
+          "query_start": "897010",
+          "query_end": "905926",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "146610",
+          "match_end": "155526",
+          "match_duration": "8916",
+          "query_start": "936019",
+          "query_end": "944936",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "185713",
+          "match_end": "194629",
+          "match_duration": "8916",
+          "query_start": "975005",
+          "query_end": "983922",
+          "query_duration": "8917"
+        }
+      ],
+      "match_coverage": "41608",
+      "match_percentage": "7.17912%"
+    },
+    {
+      "title": "Intro (Hardwell)",
+      "artist": "Hardwell",
+      "gnid": "435398745-7187489D895FE24F485A07B771F88310",
+      "song_duration": "1545473",
+      "match_positions": [
+        {
+          "match_start": "590204",
+          "match_end": "599120",
+          "match_duration": "8916",
+          "query_start": "1209016",
+          "query_end": "1217933",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "629075",
+          "match_end": "637991",
+          "match_duration": "8916",
+          "query_start": "1248002",
+          "query_end": "1256919",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "667945",
+          "match_end": "676861",
+          "match_duration": "8916",
+          "query_start": "1287012",
+          "query_end": "1295928",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "706768",
+          "match_end": "715684",
+          "match_duration": "8916",
+          "query_start": "1326021",
+          "query_end": "1334938",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "745592",
+          "match_end": "754508",
+          "match_duration": "8916",
+          "query_start": "1365008",
+          "query_end": "1373924",
+          "query_duration": "8916"
+        }
+      ],
+      "match_coverage": "44580",
+      "match_percentage": "7.69191%"
+    },
+    {
+      "title": "Radical (Original Edit)",
+      "artist": "Dyro & Dannic",
+      "gnid": "441773769-E376203D0D645A9800D92822923B20FF",
+      "song_duration": "189521",
+      "match_positions": [
+        {
+          "match_start": "29117",
+          "match_end": "38033",
+          "match_duration": "8916",
+          "query_start": "819014",
+          "query_end": "827930",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "53266",
+          "match_end": "56238",
+          "match_duration": "2972",
+          "query_start": "858000",
+          "query_end": "866917",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "92415",
+          "match_end": "98359",
+          "match_duration": "5944",
+          "query_start": "897010",
+          "query_end": "905926",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "131610",
+          "match_end": "140526",
+          "match_duration": "8916",
+          "query_start": "936019",
+          "query_end": "944936",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "170713",
+          "match_end": "179629",
+          "match_duration": "8916",
+          "query_start": "975005",
+          "query_end": "983922",
+          "query_duration": "8917"
+        }
+      ],
+      "match_coverage": "35664",
+      "match_percentage": "6.15353%"
+    },
+    {
+      "title": "Radical (Original Mix)",
+      "artist": "Dyro & Dannic",
+      "gnid": "441773770-D8C5A88A758388C040FDAFC8B8231329",
+      "song_duration": "267818",
+      "match_positions": [
+        {
+          "match_start": "44117",
+          "match_end": "53033",
+          "match_duration": "8916",
+          "query_start": "819014",
+          "query_end": "827930",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "83266",
+          "match_end": "92182",
+          "match_duration": "8916",
+          "query_start": "858000",
+          "query_end": "866917",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "122415",
+          "match_end": "128359",
+          "match_duration": "5944",
+          "query_start": "897010",
+          "query_end": "905926",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "161610",
+          "match_end": "170526",
+          "match_duration": "8916",
+          "query_start": "936019",
+          "query_end": "944936",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "200713",
+          "match_end": "209629",
+          "match_duration": "8916",
+          "query_start": "975005",
+          "query_end": "983922",
+          "query_duration": "8917"
+        }
+      ],
+      "match_coverage": "41608",
+      "match_percentage": "7.17912%"
+    },
+    {
+      "title": "Zenith",
+      "artist": "Dannic",
+      "gnid": "444731771-AF4E1C0118B27B9155459E6EB5D5A4B3",
+      "song_duration": "350296",
+      "match_positions": [
+        {
+          "match_start": "26981",
+          "match_end": "35897",
+          "match_duration": "8916",
+          "query_start": "546017",
+          "query_end": "554933",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "66083",
+          "match_end": "74999",
+          "match_duration": "8916",
+          "query_start": "585003",
+          "query_end": "593919",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "105279",
+          "match_end": "114195",
+          "match_duration": "8916",
+          "query_start": "624013",
+          "query_end": "632929",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "144428",
+          "match_end": "153344",
+          "match_duration": "8916",
+          "query_start": "663022",
+          "query_end": "671939",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "183576",
+          "match_end": "192492",
+          "match_duration": "8916",
+          "query_start": "702008",
+          "query_end": "710925",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "222725",
+          "match_end": "231641",
+          "match_duration": "8916",
+          "query_start": "741018",
+          "query_end": "749934",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "261874",
+          "match_end": "270790",
+          "match_duration": "8916",
+          "query_start": "780004",
+          "query_end": "788921",
+          "query_duration": "8917"
+        }
+      ],
+      "match_coverage": "62412",
+      "match_percentage": "10.7687%"
+    },
+    {
+      "title": "Ravefield(Original Mix)",
+      "artist": "Thomas Newson",
+      "gnid": "445982582-D1787FCD6E65ECE2896BD191DF692534",
+      "song_duration": "182973",
+      "match_positions": [
+        {
+          "match_start": "22384",
+          "match_end": "31300",
+          "match_duration": "8916",
+          "query_start": "1014015",
+          "query_end": "1022931",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "144010",
+          "match_end": "152926",
+          "match_duration": "8916",
+          "query_start": "1053001",
+          "query_end": "1061918",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "100681",
+          "match_end": "109597",
+          "match_duration": "8916",
+          "query_start": "1092011",
+          "query_end": "1100927",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "57306",
+          "match_end": "66222",
+          "match_duration": "8916",
+          "query_start": "1131020",
+          "query_end": "1139937",
+          "query_duration": "8917"
+        }
+      ],
+      "match_coverage": "35664",
+      "match_percentage": "6.15353%"
+    },
+    {
+      "title": "Radical",
+      "artist": "Dyro & Dannic",
+      "gnid": "446066280-4137A9D38AD182F7222DF760171ED351",
+      "song_duration": "202106",
+      "match_positions": [
+        {
+          "match_start": "14117",
+          "match_end": "23033",
+          "match_duration": "8916",
+          "query_start": "819014",
+          "query_end": "827930",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "53220",
+          "match_end": "62136",
+          "match_duration": "8916",
+          "query_start": "858000",
+          "query_end": "866917",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "92368",
+          "match_end": "98312",
+          "match_duration": "5944",
+          "query_start": "897010",
+          "query_end": "905926",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "131564",
+          "match_end": "140480",
+          "match_duration": "8916",
+          "query_start": "936019",
+          "query_end": "944936",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "170666",
+          "match_end": "179582",
+          "match_duration": "8916",
+          "query_start": "975005",
+          "query_end": "983922",
+          "query_duration": "8917"
+        }
+      ],
+      "match_coverage": "41608",
+      "match_percentage": "7.17912%"
+    },
+    {
+      "title": "Carbon",
+      "artist": "Kill The Buzz",
+      "gnid": "446066282-DFA9F069F3A87279781C03156C8366B0",
+      "song_duration": "224676",
+      "match_positions": [
+        {
+          "match_start": "8126",
+          "match_end": "17042",
+          "match_duration": "8916",
+          "query_start": "1209016",
+          "query_end": "1217933",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "47275",
+          "match_end": "56191",
+          "match_duration": "8916",
+          "query_start": "1248002",
+          "query_end": "1256919",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "86471",
+          "match_end": "95387",
+          "match_duration": "8916",
+          "query_start": "1287012",
+          "query_end": "1295928",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "125619",
+          "match_end": "134535",
+          "match_duration": "8916",
+          "query_start": "1326021",
+          "query_end": "1334938",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "164722",
+          "match_end": "173638",
+          "match_duration": "8916",
+          "query_start": "1365008",
+          "query_end": "1373924",
+          "query_duration": "8916"
+        }
+      ],
+      "match_coverage": "44580",
+      "match_percentage": "7.69191%"
+    },
+    {
+      "title": "Kismet",
+      "artist": "FTampa, Goldfish & Blink",
+      "gnid": "446066284-2C55217FD3802B1FBC1756FF2CF16696",
+      "song_duration": "262106",
+      "match_positions": [
+        {
+          "match_start": "39473",
+          "match_end": "48389",
+          "match_duration": "8916",
+          "query_start": "312006",
+          "query_end": "320922",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "78622",
+          "match_end": "87538",
+          "match_duration": "8916",
+          "query_start": "351016",
+          "query_end": "359932",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "117771",
+          "match_end": "126687",
+          "match_duration": "8916",
+          "query_start": "390002",
+          "query_end": "398918",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "156966",
+          "match_end": "165882",
+          "match_duration": "8916",
+          "query_start": "429011",
+          "query_end": "437928",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "196115",
+          "match_end": "205031",
+          "match_duration": "8916",
+          "query_start": "468021",
+          "query_end": "476937",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "220264",
+          "match_end": "229180",
+          "match_duration": "8916",
+          "query_start": "507007",
+          "query_end": "515924",
+          "query_duration": "8917"
+        }
+      ],
+      "match_coverage": "53496",
+      "match_percentage": "9.23029%"
+    },
+    {
+      "title": "Combat(Original Mix)",
+      "artist": "Tom & Jame",
+      "gnid": "450685513-6A5BDB1F2BA13D064D9DDDF8D1AA7506",
+      "song_duration": "303391",
+      "match_positions": [
+        {
+          "match_start": "92",
+          "match_end": "9008",
+          "match_duration": "8916",
+          "query_start": "23",
+          "query_end": "8939",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "39241",
+          "match_end": "48157",
+          "match_duration": "8916",
+          "query_start": "39009",
+          "query_end": "47925",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "78390",
+          "match_end": "87306",
+          "match_duration": "8916",
+          "query_start": "78019",
+          "query_end": "86935",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "117539",
+          "match_end": "126455",
+          "match_duration": "8916",
+          "query_start": "117005",
+          "query_end": "125921",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "156688",
+          "match_end": "165604",
+          "match_duration": "8916",
+          "query_start": "156014",
+          "query_end": "164931",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "195837",
+          "match_end": "204753",
+          "match_duration": "8916",
+          "query_start": "195001",
+          "query_end": "203917",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "234985",
+          "match_end": "243901",
+          "match_duration": "8916",
+          "query_start": "234010",
+          "query_end": "242927",
+          "query_duration": "8917"
+        }
+      ],
+      "match_coverage": "62412",
+      "match_percentage": "10.7687%"
+    },
+    {
+      "title": "Combat",
+      "artist": "Tom & Jame",
+      "gnid": "454020406-AE74AFF876580E4EA0C032DA2D88FF83",
+      "song_duration": "303484",
+      "match_positions": [
+        {
+          "match_start": "139",
+          "match_end": "9055",
+          "match_duration": "8916",
+          "query_start": "23",
+          "query_end": "8939",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "39288",
+          "match_end": "48204",
+          "match_duration": "8916",
+          "query_start": "39009",
+          "query_end": "47925",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "78437",
+          "match_end": "87353",
+          "match_duration": "8916",
+          "query_start": "78019",
+          "query_end": "86935",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "117539",
+          "match_end": "126455",
+          "match_duration": "8916",
+          "query_start": "117005",
+          "query_end": "125921",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "156734",
+          "match_end": "165650",
+          "match_duration": "8916",
+          "query_start": "156014",
+          "query_end": "164931",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "195883",
+          "match_end": "204799",
+          "match_duration": "8916",
+          "query_start": "195001",
+          "query_end": "203917",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "235032",
+          "match_end": "243948",
+          "match_duration": "8916",
+          "query_start": "234010",
+          "query_end": "242927",
+          "query_duration": "8917"
+        }
+      ],
+      "match_coverage": "62412",
+      "match_percentage": "10.7687%"
+    },
+    {
+      "title": "Zenith (Radio Edit)",
+      "artist": "Dannic",
+      "gnid": "457387991-D2315CDAC749CC02740DF9568FC7B5CA",
+      "song_duration": "208282",
+      "match_positions": [
+        {
+          "match_start": "45696",
+          "match_end": "54612",
+          "match_duration": "8916",
+          "query_start": "624013",
+          "query_end": "632929",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "77368",
+          "match_end": "86284",
+          "match_duration": "8916",
+          "query_start": "663022",
+          "query_end": "671939",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "108994",
+          "match_end": "117910",
+          "match_duration": "8916",
+          "query_start": "702008",
+          "query_end": "710925",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "140666",
+          "match_end": "149582",
+          "match_duration": "8916",
+          "query_start": "741018",
+          "query_end": "749934",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "179815",
+          "match_end": "188731",
+          "match_duration": "8916",
+          "query_start": "780004",
+          "query_end": "788921",
+          "query_duration": "8917"
+        }
+      ],
+      "match_coverage": "44580",
+      "match_percentage": "7.69191%"
+    },
+    {
+      "title": "Combat (Original Mix)",
+      "artist": "Tom & Jame",
+      "gnid": "458038978-2B5B525BA4401CE245A3890707800B8D",
+      "song_duration": "303391",
+      "match_positions": [
+        {
+          "match_start": "92",
+          "match_end": "9008",
+          "match_duration": "8916",
+          "query_start": "23",
+          "query_end": "8939",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "39195",
+          "match_end": "48111",
+          "match_duration": "8916",
+          "query_start": "39009",
+          "query_end": "47925",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "78390",
+          "match_end": "87306",
+          "match_duration": "8916",
+          "query_start": "78019",
+          "query_end": "86935",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "117492",
+          "match_end": "126408",
+          "match_duration": "8916",
+          "query_start": "117005",
+          "query_end": "125921",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "156688",
+          "match_end": "165604",
+          "match_duration": "8916",
+          "query_start": "156014",
+          "query_end": "164931",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "195790",
+          "match_end": "204706",
+          "match_duration": "8916",
+          "query_start": "195001",
+          "query_end": "203917",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "234985",
+          "match_end": "243901",
+          "match_duration": "8916",
+          "query_start": "234010",
+          "query_end": "242927",
+          "query_duration": "8917"
+        }
+      ],
+      "match_coverage": "62412",
+      "match_percentage": "10.7687%"
+    },
+    {
+      "title": "The Dance Floor Is Yours (Original Mix)",
+      "artist": "Hardwell & W&W",
+      "gnid": "459039479-923FDC7AF39A64EE7122F705E19B7A76",
+      "song_duration": "259970",
+      "match_positions": [
+        {
+          "match_start": "57817",
+          "match_end": "66733",
+          "match_duration": "8916",
+          "query_start": "1911002",
+          "query_end": "1919918",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "96827",
+          "match_end": "105743",
+          "match_duration": "8916",
+          "query_start": "1950011",
+          "query_end": "1958928",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "135836",
+          "match_end": "144752",
+          "match_duration": "8916",
+          "query_start": "1989021",
+          "query_end": "1997937",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "174521",
+          "match_end": "183437",
+          "match_duration": "8916",
+          "query_start": "2028007",
+          "query_end": "2036924",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "213344",
+          "match_end": "222260",
+          "match_duration": "8916",
+          "query_start": "2067017",
+          "query_end": "2075933",
+          "query_duration": "8916"
+        }
+      ],
+      "match_coverage": "44580",
+      "match_percentage": "7.69191%"
+    },
+    {
+      "title": "Ravefield",
+      "artist": "Thomas Newson",
+      "gnid": "460920945-8FB0FBAB083015C5CFC6ECB650E9E212",
+      "song_duration": "240001",
+      "match_positions": [
+        {
+          "match_start": "22337",
+          "match_end": "31253",
+          "match_duration": "8916",
+          "query_start": "1014015",
+          "query_end": "1022931",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "61486",
+          "match_end": "70402",
+          "match_duration": "8916",
+          "query_start": "1053001",
+          "query_end": "1061918",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "100635",
+          "match_end": "109551",
+          "match_duration": "8916",
+          "query_start": "1092011",
+          "query_end": "1100927",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "139830",
+          "match_end": "148746",
+          "match_duration": "8916",
+          "query_start": "1131020",
+          "query_end": "1139937",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "178979",
+          "match_end": "184923",
+          "match_duration": "5944",
+          "query_start": "1170007",
+          "query_end": "1178923",
+          "query_duration": "8916"
+        }
+      ],
+      "match_coverage": "41608",
+      "match_percentage": "7.17912%"
+    },
+    {
+      "title": "Zenith (Original Mix)",
+      "artist": "Dannic",
+      "gnid": "461350861-5FEF1CBB565A26E7B1C2C7FA0381F24E",
+      "song_duration": "350296",
+      "match_positions": [
+        {
+          "match_start": "26981",
+          "match_end": "35897",
+          "match_duration": "8916",
+          "query_start": "546017",
+          "query_end": "554933",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "66083",
+          "match_end": "74999",
+          "match_duration": "8916",
+          "query_start": "585003",
+          "query_end": "593919",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "105279",
+          "match_end": "114195",
+          "match_duration": "8916",
+          "query_start": "624013",
+          "query_end": "632929",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "144428",
+          "match_end": "153344",
+          "match_duration": "8916",
+          "query_start": "663022",
+          "query_end": "671939",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "183576",
+          "match_end": "192492",
+          "match_duration": "8916",
+          "query_start": "702008",
+          "query_end": "710925",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "222725",
+          "match_end": "231641",
+          "match_duration": "8916",
+          "query_start": "741018",
+          "query_end": "749934",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "261874",
+          "match_end": "270790",
+          "match_duration": "8916",
+          "query_start": "780004",
+          "query_end": "788921",
+          "query_duration": "8917"
+        }
+      ],
+      "match_coverage": "62412",
+      "match_percentage": "10.7687%"
+    },
+    {
+      "title": "Zenith",
+      "artist": "Dannic",
+      "gnid": "462583436-B57A1D21F319E5BB39EF60696F0A3085",
+      "song_duration": "248964",
+      "match_positions": [
+        {
+          "match_start": "11935",
+          "match_end": "20851",
+          "match_duration": "8916",
+          "query_start": "546017",
+          "query_end": "554933",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "51037",
+          "match_end": "59953",
+          "match_duration": "8916",
+          "query_start": "585003",
+          "query_end": "593919",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "195186",
+          "match_end": "204102",
+          "match_duration": "8916",
+          "query_start": "624013",
+          "query_end": "632929",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "138483",
+          "match_end": "147399",
+          "match_duration": "8916",
+          "query_start": "702008",
+          "query_end": "710925",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "162679",
+          "match_end": "171595",
+          "match_duration": "8916",
+          "query_start": "741018",
+          "query_end": "749934",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "194304",
+          "match_end": "200248",
+          "match_duration": "5944",
+          "overlap": "195186 - 200248",
+          "query_start": "780004",
+          "query_end": "788921",
+          "query_duration": "8917"
+        }
+      ],
+      "match_coverage": "45462",
+      "match_percentage": "7.84409%"
+    },
+    {
+      "title": "Carbon [Original Mix]",
+      "artist": "Kill The Buzz",
+      "gnid": "471706122-D9BAD4E8BD2070C818B04D1B506C1F2D",
+      "song_duration": "304831",
+      "match_positions": [
+        {
+          "match_start": "68127",
+          "match_end": "77043",
+          "match_duration": "8916",
+          "query_start": "1209016",
+          "query_end": "1217933",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "107276",
+          "match_end": "116192",
+          "match_duration": "8916",
+          "query_start": "1248002",
+          "query_end": "1256919",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "146471",
+          "match_end": "155387",
+          "match_duration": "8916",
+          "query_start": "1287012",
+          "query_end": "1295928",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "185620",
+          "match_end": "194536",
+          "match_duration": "8916",
+          "query_start": "1326021",
+          "query_end": "1334938",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "224769",
+          "match_end": "233685",
+          "match_duration": "8916",
+          "query_start": "1365008",
+          "query_end": "1373924",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "263918",
+          "match_end": "269862",
+          "match_duration": "5944",
+          "query_start": "1404017",
+          "query_end": "1412934",
+          "query_duration": "8917"
+        }
+      ],
+      "match_coverage": "50524",
+      "match_percentage": "8.7175%"
+    },
+    {
+      "title": "Typhoon (Edit)",
+      "artist": "Julian Calor",
+      "gnid": "537168869-B8DB59C45FDC3209FA5EF084891B929C",
+      "song_duration": "269676",
+      "match_positions": [
+        {
+          "match_start": "31950",
+          "match_end": "40866",
+          "match_duration": "8916",
+          "query_start": "1638005",
+          "query_end": "1646921",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "71145",
+          "match_end": "80061",
+          "match_duration": "8916",
+          "query_start": "1677014",
+          "query_end": "1685931",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "110248",
+          "match_end": "119164",
+          "match_duration": "8916",
+          "query_start": "1716001",
+          "query_end": "1724917",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "149443",
+          "match_end": "158359",
+          "match_duration": "8916",
+          "query_start": "1755010",
+          "query_end": "1763927",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "188592",
+          "match_end": "197508",
+          "match_duration": "8916",
+          "query_start": "1794020",
+          "query_end": "1802936",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "227741",
+          "match_end": "236657",
+          "match_duration": "8916",
+          "query_start": "1833006",
+          "query_end": "1841922",
+          "query_duration": "8916"
+        }
+      ],
+      "match_coverage": "53496",
+      "match_percentage": "9.23029%"
+    },
+    {
+      "title": "Electro Power",
+      "artist": "Dj-Haxor",
+      "gnid": "588794475-008689E3ACCFFAD566504BF671EE6FE4",
+      "song_duration": "1012761",
+      "match_positions": [
+        {
+          "match_start": "242137",
+          "match_end": "248081",
+          "match_duration": "5944",
+          "query_start": "897010",
+          "query_end": "905926",
+          "query_duration": "8916"
+        }
+      ],
+      "match_coverage": "5944",
+      "match_percentage": "1.02559%"
+    },
+    {
+      "title": "Combat (Edit)",
+      "artist": "Jame",
+      "gnid": "603189092-36A452643B334170FDBE7D6D2E21EC68",
+      "song_duration": "231270",
+      "match_positions": [
+        {
+          "match_start": "0",
+          "match_end": "2972",
+          "match_duration": "2972",
+          "query_start": "39009",
+          "query_end": "47925",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "34365",
+          "match_end": "43281",
+          "match_duration": "8916",
+          "query_start": "78019",
+          "query_end": "86935",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "73514",
+          "match_end": "82430",
+          "match_duration": "8916",
+          "query_start": "117005",
+          "query_end": "125921",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "112663",
+          "match_end": "121579",
+          "match_duration": "8916",
+          "query_start": "156014",
+          "query_end": "164931",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "151812",
+          "match_end": "160728",
+          "match_duration": "8916",
+          "query_start": "195001",
+          "query_end": "203917",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "191007",
+          "match_end": "199923",
+          "match_duration": "8916",
+          "query_start": "234010",
+          "query_end": "242927",
+          "query_duration": "8917"
+        }
+      ],
+      "match_coverage": "47552",
+      "match_percentage": "8.2047%"
+    },
+    {
+      "title": "Tear It Off (Edit)",
+      "artist": "Skitzofrenix",
+      "gnid": "603189098-FB1FCFDD3637AAFA46DAF8989452354C",
+      "song_duration": "234428",
+      "match_positions": [
+        {
+          "match_start": "14953",
+          "match_end": "23869",
+          "match_duration": "8916",
+          "query_start": "2106003",
+          "query_end": "2114919",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "54009",
+          "match_end": "62925",
+          "match_duration": "8916",
+          "query_start": "2145012",
+          "query_end": "2153929",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "93019",
+          "match_end": "101935",
+          "match_duration": "8916",
+          "query_start": "2184022",
+          "query_end": "2192938",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "132028",
+          "match_end": "140944",
+          "match_duration": "8916",
+          "query_start": "2223008",
+          "query_end": "2231925",
+          "query_duration": "8917"
+        },
+        {
+          "match_start": "171038",
+          "match_end": "179954",
+          "match_duration": "8916",
+          "query_start": "2262018",
+          "query_end": "2270934",
+          "query_duration": "8916"
+        },
+        {
+          "match_start": "210001",
+          "match_end": "218917",
+          "match_duration": "8916",
+          "query_start": "2301004",
+          "query_end": "2309921",
+          "query_duration": "8917"
+        }
+      ],
+      "match_coverage": "53496",
+      "match_percentage": "9.23029%"
+    }
+  ]
+}

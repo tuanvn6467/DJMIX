@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,8 @@ using System.Windows.Input;
 using Microsoft.Win32;
 using NAudio.Wave;
 using System.Globalization;
+using MusicIdentification.Utilities;
+using Newtonsoft.Json;
 
 namespace MusicIdentification
 {
@@ -23,7 +26,7 @@ namespace MusicIdentification
         private static RichTextBox richTextBox12;
         List<string> listTrackMatched = new List<string>();
         List<string> listTrackMatchedArtist = new List<string>();
-
+        List<string> listTrackByMediaScanner = new List<string>();
         List<string> listTrackMatchedCompare = new List<string>
         {
            "Combat",
@@ -34,7 +37,7 @@ namespace MusicIdentification
            "Carbon",
            "Rise Up",
            "Typhoon",
-           "The Dancefloor Is Yours",
+           "The Dance Floor Is Yours",
            "Tear It Off",
            "Bleepdifreak",
         };
@@ -50,13 +53,21 @@ namespace MusicIdentification
             InitializeComponent();
 
             richTextBox12 = richTextBox1;
+
+            cbbFingerLength.ValueMember = "Key";
+            cbbFingerLength.DisplayMember = "Value";
+            cbbFingerLength.Items.Add(new KeyValuePair<int, string>((int)FingerprintEnum.File, "File"));
+            cbbFingerLength.Items.Add(new KeyValuePair<int, string>((int)FingerprintEnum.ThreeSeconds, "3 seconds"));
+            cbbFingerLength.Items.Add(new KeyValuePair<int, string>((int)FingerprintEnum.SixSeconds, "6 seconds"));
+            cbbFingerLength.SelectedIndex = 1;
+
         }
         private void f_Main_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnFileScanner_Click(object sender, EventArgs e)
         {
             //openFileDialog1 = new OpenFileDialog();
             openFileDialog1.Filter = "All Supported Audio | *.mp3; *.wma | MP3s | *.mp3 | WMAs | *.wma";
@@ -539,8 +550,7 @@ namespace MusicIdentification
         /*-----------------------------------------------------------------------------
 		 *  DisplayFindAlbumResutlsByFingerprint
 		 */
-        private void
-        DisplayFindAlbumResutlsByFingerprint(GnResponseAlbums response)
+        private void DisplayFindAlbumResutlsByFingerprint(GnResponseAlbums response)
         {
             var responses = response;
             GnAlbumEnumerable albumEnumerable = response.Albums;
@@ -559,8 +569,15 @@ namespace MusicIdentification
                         richTextBox1.Text = richTextBox1.Text + ("\n          Artist: " + album.Artist.Name.Display);
 
                         var track = album.TrackMatched();
-                        listTrackMatched.Add(track.Title.Display);
-                        listTrackMatchedArtist.Add(track.Artist.Name.Display);
+                        if (!listTrackMatched.Any(t => t.Contains(track.Title.Display)))
+                        {
+                            listTrackMatched.Add(track.Title.Display);    
+                        }
+                        if (listTrackMatchedArtist.Any(t => t.Contains(track.Artist.Name.Display)))
+                        {
+                            listTrackMatchedArtist.Add(track.Artist.Name.Display);    
+                        }
+                        
                         richTextBox1.Text = richTextBox1.Text + ("\n         Track Title: " + track.Title.Display);
                         richTextBox1.Text = richTextBox1.Text + ("\n         Track Artist: " + track.Artist.Name.Display);
                         richTextBox1.Text = richTextBox1.Text + ("\n         Track number: " + track.TrackNumber);
@@ -636,19 +653,24 @@ namespace MusicIdentification
                 button3.Visible = false;
 
                 //Start FingerprintBegin for first time
-                gnMusicID.FingerprintBegin(GnFingerprintType.kFingerprintTypeGNFPX, (uint)b.WaveFormat.SampleRate, (uint)b.WaveFormat.BitsPerSample, (uint)b.WaveFormat.Channels);
+                //gnMusicID.FingerprintBegin(GnFingerprintType.kFingerprintTypeStream3, (uint)b.WaveFormat.SampleRate, (uint)b.WaveFormat.BitsPerSample, (uint)b.WaveFormat.Channels);
 
                 //Get total bytes 
                 int currentBytes = b.WaveFormat.AverageBytesPerSecond * (int)numericUpDown1.Value;
 
                 //Create buffer data
                 byte[] audioData = new byte[currentBytes + 1];
-
+                b.Seek(44, SeekOrigin.Begin);
                 // read data from mix 
                 int bytesRead = b.Read(audioData, 0, currentBytes);
-
                 // Start Looping
-                SetFingerprintBeginWriteEndLoop(b, gnMusicID, audioData, bytesRead, currentBytes, b.Length, (int)numericUpDown1.Value);
+                //b.Seek(b.WaveFormat.AverageBytesPerSecond, SeekOrigin.Begin);
+                SetFingerprintBeginWriteEndLoop1(b, gnMusicID, audioData, bytesRead, currentBytes, b.Length,
+                    (int)numericUpDown1.Value);
+
+                
+
+
 
                 lbl_process.Text = "Completed...";
                 button3.Visible = true;
@@ -664,24 +686,27 @@ namespace MusicIdentification
         /// <param name="currentBytes"></param>
         /// <param name="maxLength"></param>
         /// <param name="index"></param>
-        private void SetFingerprintBeginWriteEndLoop(MediaFoundationReader b, GnMusicId gnMusicID, byte[] audioData, int bytesRead, int currentBytes, long maxLength, int second)
+        private void SetFingerprintBeginWriteEndLoop1(MediaFoundationReader b, GnMusicId gnMusicID, byte[] audioData, 
+            int bytesRead, int currentBytes, long maxLength, int second)
         {
             try
             {
                 bool complete = false;
                 //Start FingerprintBegin for loop
-                gnMusicID.FingerprintBegin(GnFingerprintType.kFingerprintTypeFile, (uint)b.WaveFormat.SampleRate, (uint)b.WaveFormat.BitsPerSample, (uint)b.WaveFormat.Channels);
+                gnMusicID.FingerprintBegin(
+                    Utils.GetFingerprintType(ParseData.GetInt(cbbFingerLength.SelectedValue) ?? 0),
+                    (uint) b.WaveFormat.SampleRate, (uint) b.WaveFormat.BitsPerSample, (uint) b.WaveFormat.Channels);
                 while (currentBytes < maxLength)
                 {
                     complete = gnMusicID.FingerprintWrite(audioData, (uint)bytesRead);
-                    if (true == complete)
+                    if (complete)
                     {
                         // encoding data
                         var getData = gnMusicID.FingerprintDataGet();
 
                         // get response from server
-                        GnResponseAlbums response = gnMusicID.FindAlbums(getData, GnFingerprintType.kFingerprintTypeGNFPX);
-
+                        GnResponseAlbums response = gnMusicID.FindAlbums(getData,
+                            Utils.GetFingerprintType(ParseData.GetInt(cbbFingerLength.SelectedValue) ?? 0));
                         //Display response
                         DisplayFindAlbumResutlsByFingerprint(response);
 
@@ -704,9 +729,74 @@ namespace MusicIdentification
                             // Read bytes from file
                             bytesRead = b.Read(audioData, 0, totalRead);
                             // Loop
-                            SetFingerprintBeginWriteEndLoop(b, gnMusicID, audioData, bytesRead, currentBytes, maxLength, second);
+                            SetFingerprintBeginWriteEndLoop1(b, gnMusicID, audioData, bytesRead, currentBytes, maxLength, second);
                             break;
                         }
+                    }
+                }
+
+                if (!complete)
+                {
+                    /* Fingerprinter doesn't have enough data to generate a fingerprint.
+                        Note that the sample data does include one track that is too short to fingerprint. */
+                    richTextBox1.Text = richTextBox1.Text + ("\nWarning: input file does contain enough data to generate a fingerprint :");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                // MessageBox.Show(ex.Message);
+            }
+
+
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="b"> Get WaveFormat</param>
+        /// <param name="gnMusicID"></param>
+        /// <param name="audioData"></param>
+        /// <param name="bytesRead"></param>
+        /// <param name="currentBytes"></param>
+        /// <param name="maxLength"></param>
+        /// <param name="index"></param>
+        private void SetFingerprintBeginWriteEndLoop(MediaFoundationReader b, GnMusicId gnMusicID, byte[] audioData, 
+            int bytesRead, int currentBytes, long maxLength, int second)
+        {
+            try
+            {
+                bool complete = false;
+                //Start FingerprintBegin for loop
+                gnMusicID.FingerprintBegin(GnFingerprintType.kFingerprintTypeStream3, (uint)b.WaveFormat.SampleRate, (uint)b.WaveFormat.BitsPerSample, (uint)b.WaveFormat.Channels);
+                if (b.CanSeek)
+                {
+                    complete = gnMusicID.FingerprintWrite(audioData, (uint) bytesRead);
+                    if (true == complete)
+                    {
+                        // encoding data
+                        var getData = gnMusicID.FingerprintDataGet();
+
+                        // get response from server
+                        GnResponseAlbums response = gnMusicID.FindAlbums(getData,
+                            GnFingerprintType.kFingerprintTypeStream3);
+
+                        //Display response
+                        DisplayFindAlbumResutlsByFingerprint(response);
+
+                        // end Fingerprint
+                        gnMusicID.FingerprintEnd();
+                        //var totalRead = b.WaveFormat.AverageBytesPerSecond * second;
+                        var seconds = currentBytes/b.WaveFormat.AverageBytesPerSecond;
+                        richTextBox1.Text = richTextBox1.Text + ("\n Seconds : " + seconds);
+                        //currentBytes += bytesRead;
+                        // Skip currentBytes 
+                        b.Seek(currentBytes, SeekOrigin.Current);
+                        audioData = new byte[currentBytes + 1];
+                        // Read bytes from file
+                        bytesRead = b.Read(audioData, 0, currentBytes);
+                        // Loop
+                        SetFingerprintBeginWriteEndLoop(b, gnMusicID, audioData, bytesRead, currentBytes, maxLength,
+                            second);
                     }
                 }
 
@@ -961,7 +1051,18 @@ namespace MusicIdentification
 
         private void button3_Click(object sender, EventArgs e)
         {
-            f_tracklist_compare frm = new f_tracklist_compare(listTrackMatched, listTrackMatchedArtist, listTrackMatchedCompare, listTrackMatchedAristCompare);
+            var listTrackMatchedFilter = new List<string>();
+            /*foreach (var trackMatched in listTrackMatched)
+            {
+                if (!listTrackMatchedFilter.Any(t => t.Contains(trackMatched)))
+                {
+                    listTrackMatchedFilter.Add(trackMatched);
+                }
+            }*/
+            listTrackMatchedFilter = listTrackMatched.GroupBy(x => x).Select(s => s.Key)
+                .Where(g => g.Count() >= 2).ToList();
+            f_tracklist_compare frm = new f_tracklist_compare(listTrackMatched, listTrackMatchedArtist,
+                listTrackMatchedCompare, listTrackMatchedAristCompare, listTrackByMediaScanner);
             frm.ShowDialog();
         }
 
@@ -973,6 +1074,54 @@ namespace MusicIdentification
         private void f_Main_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnBrowserMediaScanner_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Exe file | *.exe";
+            openFileDialog1.AutoUpgradeEnabled = false; //using FileDialog.AutoUpgradeEnabled = false it will display the old XP sytle dialog box, which then displays correctly
+            openFileDialog1.Multiselect = false;
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                txtPathScanner.Text = openFileDialog1.FileName;
+            }
+        }
+
+        private void btnMediaScanner_Click(object sender, EventArgs e)
+        {
+            button3.Visible = false;
+            string filename = Path.Combine(txtPathScanner.Text, "");
+            var proc = new Process
+            {
+                StartInfo = new ProcessStartInfo
+                {
+                    FileName = filename,
+                    Arguments =
+                        String.Format(
+                            "-cid 1108215790 -ctag 3489C04F7413DF962341400BA0C6E96F -nomap -{0}s -i {1} -vhq {2}",
+                            Utils.GetFingerprintInteger(ParseData.GetInt(cbbFingerLength.SelectedValue) ?? 0),
+                            numericUpDown1.Value,
+                            txt_path.Text),
+                    UseShellExecute = false,
+                    RedirectStandardOutput = true,
+                    CreateNoWindow = true
+                }
+            };
+            proc.Start();
+            var result = new StringBuilder();
+            while (!proc.StandardOutput.EndOfStream)
+            {
+                string line = proc.StandardOutput.ReadLine();
+                result.AppendLine(line);
+            }
+            var tuanvn = result.ToString();
+
+            var lst = JsonConvert.DeserializeObject<MusicMap>(tuanvn);
+            foreach (var track in lst.matches)
+            {
+                listTrackByMediaScanner.Add(track.title);
+            }
+            button3.Visible = true;
         }
     }
 }

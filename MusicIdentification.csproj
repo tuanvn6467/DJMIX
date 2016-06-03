@@ -362,6 +362,11 @@
     <Compile Include="MusicIDFileTrackID.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\FingerprintEnum.cs" />
+    <Compile Include="Utilities\MusicMap.cs" />
+    <Compile Include="Utilities\ParseData.cs" />
+    <Compile Include="Utilities\TrackMap.cs" />
+    <Compile Include="Utilities\TrackPosition.cs" />
     <Compile Include="Utilities\Utils.cs" />
     <EmbeddedResource Include="f_Main.resx">
       <DependentUpon>f_Main.cs</DependentUpon>
@@ -388,6 +393,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Utilities\result.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -398,7 +404,9 @@
     <Content Include="FileSystem\Newtonsoft.Json.dll" />
     <Content Include="FileSystem\Newtonsoft.Json.xml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
