@@ -1059,9 +1059,8 @@ namespace MusicIdentification
                     listTrackMatchedFilter.Add(trackMatched);
                 }
             }*/
-            listTrackMatchedFilter = listTrackMatched.GroupBy(x => x).Select(s => s.Key)
-                .Where(g => g.Count() >= 2).ToList();
-            f_tracklist_compare frm = new f_tracklist_compare(listTrackMatched, listTrackMatchedArtist,
+            listTrackMatchedFilter = listTrackMatched.GroupBy(x => x).Select(s => s.Key).ToList();
+            f_tracklist_compare frm = new f_tracklist_compare(listTrackMatchedFilter, listTrackMatchedArtist,
                 listTrackMatchedCompare, listTrackMatchedAristCompare, listTrackByMediaScanner);
             frm.ShowDialog();
         }
